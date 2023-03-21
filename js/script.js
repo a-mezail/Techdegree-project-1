@@ -10,6 +10,46 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+const quotes = [
+  {
+  quote: 'Beware; for I am fearless, and therefore powerful.',
+  source: 'Mary Shelley',
+  citation:'Frankenstein',
+  year: 1818,
+  tags: ['love','inspiration','triumphant']
+},
+{
+  quote: 'Ask not what your country can do for you - ask what you can do for your country.',
+  source: 'John F. Kennedy',
+  citation: 'Inaugural speech',
+  year: 1961,
+  tags: ['patriotic', 'presidential', 'inspirational']
+},
+{
+  quote: "What's a bad miracle?",
+  source: 'Jordan Peele',
+  citation: 'Nope',
+  year: 2022,
+  tags: ['horror', 'existential','film']
+
+},
+{
+  quote: "The mystery of life isn't a problem to solve, but a reality to experience.",
+  source:'Frank Herbert',
+  citation: 'Dune',
+  year: 1965,
+  tags: ['sci-fi','curiousity','pondering']
+},
+{
+  quote: 'Living for the future is more important than trying to avenge the past.',
+  source: 'Kentaro Miura',
+  citation: 'Berserk',
+  year: 1991,
+  tags: ['manga','berserk','revenge']
+}
+
+];
+console.log(quotes);
 
 
 
