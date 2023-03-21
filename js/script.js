@@ -10,6 +10,7 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+// Array of five various quotes and their properties
 const quotes = [
   {
   quote: 'Beware; for I am fearless, and therefore powerful.',
