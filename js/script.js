@@ -45,7 +45,7 @@ const quotes = [
   quote: 'Living for the future is more important than trying to avenge the past.',
   source: 'Kentaro Miura',
   citation: 'Berserk',
-  year: 1991,
+  
   tags: [' [manga','berserk','revenge] ']
 }
 
@@ -73,9 +73,19 @@ function printQuote(){
   let fullquote;
   fullquote = `
   <p class="quote"> ${quote.quote} </p>
-  <p class="source"> ${quote.source} <span class ="citation"> ${quote.citation} </span> <span class = "year"> ${quote.year} <span class = "tags"> ${quote.tags} </span>
-</p>
-  `
+  <p class="source"> ${quote.source} `;
+
+  if (quote.citation != null){
+    fullquote += `<span class = "citation"> ${quote.citation}</span>`
+  }
+  if (quote.year != null ){
+    fullquote += `<span class = "year"> ${quote.year}</span>`
+  }
+  if (quote.tags != null){
+    fullquote += `<span class = "tags"> ${quote.tags}</span>`
+  }
+fullquote += `</p>`
+  
   
   document.getElementById('quote-box').innerHTML = fullquote; 
   body.style.backgroundColor = bgcolor();
